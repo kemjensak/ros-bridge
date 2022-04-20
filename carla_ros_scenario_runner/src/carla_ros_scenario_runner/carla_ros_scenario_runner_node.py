@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Copyright (c) 2020 Intel Corporation.
 #
@@ -12,6 +12,9 @@ Internally, the CARLA scenario runner is executed
 """
 
 import os
+# for compatible with python 2.7, inserts python 3.7 API manualy
+import sys
+sys.path.insert(0,"/home/irol/carla_simulator/CARLA_0.9.13/PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg")
 try:
     import queue
 except ImportError:
